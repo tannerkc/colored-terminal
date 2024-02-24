@@ -1,0 +1,12 @@
+{
+  "name": "colored-terminal",
+  "version": "1.0.1",
+  "description": "Easy & lightweight color logging",
+  "keywords": ["log", "logging", "console", "color", "debug"],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanner Cottle",
+  "license": "ISC"
+}
