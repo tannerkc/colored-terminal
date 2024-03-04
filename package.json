@@ -4,6 +4,7 @@
   "description": "Easy & lightweight color logging",
   "keywords": ["log", "logging", "console", "color", "debug"],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
