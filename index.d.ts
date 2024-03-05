@@ -1,6 +1,6 @@
 declare module 'colored-terminal' {
-    type LogFunction = (text: string) => void;
-    
+    type LogFunction = (text: any) => void;
+
     interface ColorMap {
         reset: string;
         bold: string;
@@ -38,7 +38,7 @@ declare module 'colored-terminal' {
 
     export function rgbToAnsi(r: number, g: number, b: number): string;
 
-    export function applyColor(color: string, text: string): string;
+    export function applyColor(color: string, text: any): string;
 
     export interface MappedLog {
         reset: LogFunction;
@@ -69,10 +69,11 @@ declare module 'colored-terminal' {
         error: LogFunction;
         warn: LogFunction;
         info: LogFunction;
-        hex: (hexColor: string, text: string) => void;
-        rgb: (color: { r: number; g: number; b: number }, text: string) => void;
+        hex: (hexColor: string, text: any) => void;
+        rgb: (color: { r: number; g: number; b: number }, text: any) => void;
         default: LogFunction;
     }
 
-    export const log: MappedLog;
+    const log: MappedLog;
+    export default log;
 }
