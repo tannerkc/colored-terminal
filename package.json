@@ -1,6 +1,6 @@
 {
   "name": "colored-terminal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easy & lightweight color logging",
   "keywords": ["log", "logging", "console", "color", "debug"],
   "main": "index.js",
